@@ -7,13 +7,14 @@ public class MySqlConnection {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection connection = DriverManager.getConnection("jdbc:mysql://localhost/java?" +
-            "user=root&password=");
+                    "user=root&password=");
             System.out.println("Done");
             PreparedStatement preparedStatement = connection.prepareStatement("select * from user");
 //            Statement statement = connection.createStatement();
             ResultSet rs = preparedStatement.executeQuery();
-            rs.next();
-            System.out.println(rs.getString(1));
+            while (rs.next()) {
+                System.out.println(rs.getString(1));
+            }
 //          preparedStatement.execute();
 //            System.out.println(preparedStatement.getFetchSize());
 
