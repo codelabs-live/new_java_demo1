@@ -1,41 +1,56 @@
 package frames;
 
 import javax.swing.*;
-import java.awt.*;
+import java.awt.event.ActionEvent;
 
 public class Login {
+
+
     public static void main(String[] args) {
-        // object
-        JFrame jFrame = new JFrame("Login");
-        JPanel jPanel = new JPanel();
-        JLabel emailLabel = new JLabel("Email");
-        JLabel passwordLabel = new JLabel("Password");
+        JFrame frame = new JFrame("Login");
+        JPanel panel = new JPanel();
+        JLabel loginLabel = new JLabel("Login");
+        JLabel emailL = new JLabel("Email");
+        JLabel passL = new JLabel("Password");
+        JButton loginB = new JButton("Login");
         JTextField emailTF = new JTextField();
         JTextField passTF = new JTextField();
-        JButton login = new JButton("Login");
+//        JPasswordField
 
 
+        loginLabel.setBounds(0,10,400,30);
+        emailL.setBounds(10,40,300,30);
+        emailTF.setBounds(10,70,300,30);
+        passL.setBounds(10,100,300,30);
+        passTF.setBounds(10,130, 300, 30);
+        loginB.setBounds(10,170, 300, 30);
 
-        // bounds
-        emailLabel.setBounds(10, 10, 200, 30);
-        emailTF.setBounds(10, 40, 200, 30);
-        jPanel.setBackground(Color.BLUE);
-        emailLabel.setForeground(Color.white);
+loginB.addActionListener(new AbstractAction() {
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        String email = emailTF.getText().trim();
+        String pass = passTF.getText().trim();
+        System.out.println(email);
+        System.out.println(pass);
+        frame.setVisible(false);
+ new Registration();
+
+    }
+});
+        panel.add(loginLabel);
+        panel.add(emailL);
+        panel.add(emailTF);
+        panel.add(passL);
+        panel.add(passTF);
+        panel.add(loginB);
+
+        panel.setLayout(null);
+
+        frame.add(panel);
 
 
-        // add to panel
-        jPanel.add(emailLabel);
-        jPanel.add(emailTF);
-        jPanel.add(passwordLabel);
-        jPanel.add(passTF);
-        jPanel.add(login);
-        jPanel.setLayout(null);
-
-// frame
-        jFrame.add(jPanel);
-        jFrame.setSize(300, 400);
-        jFrame.setVisible(true);
-//        jFrame.setLayout(new FlowLayout());
-        jFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        frame.setSize(400, 500);
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        frame.setVisible(true);
     }
 }
