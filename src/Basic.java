@@ -582,27 +582,67 @@ import java.io.IOException;
 //    }
 //}
 
-
-public class Basic {
-    void display() throws IOException {
-        System.out.println("Demo from Display");
-        throw  new IOException("Error");
-    }
-    void  demo(){
-        try{
-        display();
-        }catch (Exception e){
-            System.out.println(e);
-        }
-    }
-    public static void main(String[] args){
-        Basic basic = new Basic();
-        basic.demo();
-        System.out.println("Demo");
-//        try {
-//            basic.display();
+//
+//public class Basic {
+//    void display() throws IOException {
+//        System.out.println("Demo from Display");
+//        throw  new IOException("Error");
+//    }
+//    void  demo(){
+//        try{
+//        display();
 //        }catch (Exception e){
 //            System.out.println(e);
 //        }
+//    }
+//    public static void main(String[] args){
+//        Basic basic = new Basic();
+//        basic.demo();
+//        System.out.println("Demo");
+////        try {
+////            basic.display();
+////        }catch (Exception e){
+////            System.out.println(e);
+////        }
+//    }
+//}
+
+
+public  class Basic {
+    String name ;
+    int age ;
+
+    Basic(String name , int age ){
+        this.name= name;
+        this.age= age;
+    }
+    Basic(String name , int age , float a){
+
+    }
+    Basic(String name){
+
+    }
+    Basic(int  age ){
+
+    }
+    Basic(int age, String name , float a){
+
+    }
+
+    void display(){
+        System.out.println(name);
+        System.out.println(age);
+    }
+    
+    public static void main(String[] args) {
+        Basic basic = new Basic("XYZ", 40);
+        basic.display();
     }
 }
+
+
+
+
+
+
+
