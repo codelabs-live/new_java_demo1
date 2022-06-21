@@ -390,8 +390,10 @@
 //}
 
 import basic.Demo;
+import newpackage.StudentDetails;
 
 import java.io.IOException;
+import java.util.Scanner;
 //
 //public class Basic {
 //
@@ -607,42 +609,85 @@ import java.io.IOException;
 //    }
 //}
 
+//
+//public  class Basic {
+//    String name ;
+//    int age ;
+//
+//    Basic(String name , int age ){
+//        this.name= name;
+//        this.age= age;
+//    }
+//    Basic(String name , int age , float a){
+//
+//    }
+//    Basic(String name){
+//
+//    }
+//    Basic(int  age ){
+//
+//    }
+//    Basic(int age, String name , float a){
+//
+//    }
+//
+//    void display(){
+//        System.out.println(name);
+//        System.out.println(age);
+//    }
+//
+//    public static void main(String[] args) {
+//        Basic basic = new Basic("XYZ", 40);
+//        basic.display();
+//    }
+//}
 
-public  class Basic {
-    String name ;
-    int age ;
 
-    Basic(String name , int age ){
-        this.name= name;
-        this.age= age;
-    }
-    Basic(String name , int age , float a){
 
-    }
-    Basic(String name){
+//
+//
+//public class Basic {
+//    Scanner scanner = new Scanner(System.in);
+//    int sum(){
+//        int a , b;
+//        System.out.println("Enter the value of a ");
+//        a = scanner.nextInt();
+//        System.out.println("Enter the value of b ");
+//        b = scanner.nextInt();
+//        System.out.println("Sum: ");
+//        return a+b;
+//    }
+//
+//    int sub(){
+//        return 7;
+//    }
+//
+//    public static void main(String[] args) {
+//        Basic basic = new Basic();
+//        System.out.println(basic.sum());
+//    }
+//}
+//
+//
+//
+//
 
-    }
-    Basic(int  age ){
 
-    }
-    Basic(int age, String name , float a){
 
-    }
 
-    void display(){
+public class Basic {
+
+    void display(String name ){
         System.out.println(name);
-        System.out.println(age);
     }
-    
+
+
     public static void main(String[] args) {
-        Basic basic = new Basic("XYZ", 40);
-        basic.display();
+//    Basic basic = new Basic();
+//    basic.display("Kamlesh");
+        StudentDetails studentDetails = new StudentDetails();
+        studentDetails.getStudentData();
+        studentDetails.displayStudentData();
     }
 }
-
-
-
-
-
-
 
