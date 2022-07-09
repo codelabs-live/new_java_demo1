@@ -524,23 +524,47 @@ import java.util.Scanner;
 //    }
 //}
 //
+//public class NewClass {
+//    public static void main(String[] args) {
+//        Scanner scanner = new Scanner(System.in);
+//        String email, pass;
+//        boolean isLogin = false;
+//        System.out.println("Enter your email id ");
+//        email = scanner.next();
+//        System.out.println("Enter password");
+//        pass =scanner.next();
+//        System.out.println("******Processing*******");
+//        Login login =new Login(email, pass);
+//        isLogin =  login.check();
+//
+//        if (isLogin) {
+//            System.out.println("Done");
+//        }else {
+//            System.out.println("Error");
+//        }
+//    }
+//}
+
+
+
+
+
 public class NewClass {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String email, pass;
-        boolean isLogin = false;
-        System.out.println("Enter your email id ");
+        String email , pass;
+        boolean isLogin= false;
+        System.out.println("Enter email id ");
         email = scanner.next();
-        System.out.println("Enter password");
+        System.out.println("Enter your password");
         pass =scanner.next();
-        System.out.println("******Processing*******");
-        Login login =new Login(email, pass);
-        isLogin =  login.check();
-
-        if (isLogin) {
+        System.out.println("************Processing**********");
+        Login login = new Login(email, pass);
+        isLogin = login.check();
+        if(isLogin){
             System.out.println("Done");
         }else {
-            System.out.println("Error");
+            System.out.println("Login Error");
         }
     }
 }
