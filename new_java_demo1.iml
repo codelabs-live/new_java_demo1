@@ -9,5 +9,8 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="o" level="project" />
     <orderEntry type="library" name="mysql-connector-java-8.0.29" level="project" />
+    <orderEntry type="library" name="mysql-connector-java-8.0.291" level="project" />
+    <orderEntry type="library" name="mysql-connector-java-8.0.292" level="project" />
+    <orderEntry type="library" name="mysql-connector-java-8.0.293" level="project" />
   </component>
 </module>

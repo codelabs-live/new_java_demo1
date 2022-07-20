@@ -6,7 +6,7 @@ public class MySqlConnection {
     public static void main(String[] args) {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost/slinfy?" +
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost/demo1?" +
                     "user=root&password=");
             System.out.println("Done");
 //String qu = " INSERT into users VALUES (1,'XYZ@yopmail.com', '123456')";

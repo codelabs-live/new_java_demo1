@@ -674,20 +674,61 @@ import java.util.Scanner;
 
 
 
+//
+//public class Basic {
+//
+//    void display(String name ){
+//        System.out.println(name);
+//    }
+//
+//
+//    public static void main(String[] args) {
+////    Basic basic = new Basic();
+////    basic.display("Kamlesh");
+//        StudentDetails studentDetails = new StudentDetails();
+//        studentDetails.getStudentData();
+//        studentDetails.displayStudentData();
+//    }
+//}
+//
+//public  class Basic {
+//
+//    void display(){
+//        System.out.println("Demo");
+//    }
+//
+//    String name(){
+//        String nm = "Kamlesh";
+//
+//        return nm;
+//    }
+//
+//
+//    public static void main(String[] args) {
+//        Basic basic = new Basic();
+//        basic.display();
+//        basic.name();
+//
+//
+//    }
+//
+//
+//}
+//
+
+
 
 public class Basic {
-
-    void display(String name ){
-        System.out.println(name);
-    }
-
-
     public static void main(String[] args) {
-//    Basic basic = new Basic();
-//    basic.display("Kamlesh");
-        StudentDetails studentDetails = new StudentDetails();
-        studentDetails.getStudentData();
-        studentDetails.displayStudentData();
+
+
+
+        try{
+        }catch (ArithmeticException e){
+            System.out.println("Done");
+        }finally {
+            System.out.println("Finally");
+        }
+
     }
 }
-
