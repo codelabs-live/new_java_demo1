@@ -35,7 +35,7 @@ public class Login {
                 String pass = passTF.getText().trim();
                 System.out.println(email);
                 System.out.println(pass);
-                dbConnection.getConnection();
+//                dbConnection.getConnection();
 
 
 
