@@ -1,24 +1,4 @@
-//public class NewProgram {
-//    public static void main(String[] args) {
-////        int a  =3;
-////        switch (a){
-////            case 6:
-////                System.out.println(a);
-////                break;
-////            case 10:
-////                System.out.println(a);
-////                break;
-////            default:
-////                System.out.println("Error");
-////        }
-//
-//
-//        for(int i =0;i<=10;i++){
-//            System.out.println(i+" Done");
-//        }
-//
-//    }
-//}
+
 
 class  Example {
     void dis(){

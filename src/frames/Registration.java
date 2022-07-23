@@ -38,8 +38,9 @@ public class Registration {
                 System.out.println(pass);
                 dbConnection.getConnection();
                 try {
-                    String qu = " INSERT into users VALUES ('XYZ@yopmail.com', '123456')";
+                    String qu = " INSERT into users VALUES (?, ?)";
                     Statement statement = dbConnection.connection.createStatement();
+
                     statement.execute(qu);
 
 

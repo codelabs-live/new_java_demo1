@@ -1,44 +1,40 @@
+
+
+class Cal {
+    int a, b;
+    Cal(int a, int b) {
+    this.a=a;
+    this.b = b;
+    }
+
+
+    int sum(){
+        return a+b;
+    }
+}
+
+
 public class UserData {
-    private  String name;
-    private int age;
-    private String add;
-    private String ph;
-    public  UserData(String name, int age , String address, String ph){
-        this.name = name;
-        this.age = age;
-        this.add = address;
-        this.ph= ph;
+    String name;
+
+    UserData() {
+        System.out.println("Demo");
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    void display() {
+//        String name ;
+
     }
 
-    public int getAge() {
-        return age;
-    }
+    public static void main(String[] args) {
+//        UserData userData = new UserData();
+//        new UserData();
+        int a =4;
+        int b = 5;
+        Cal cl = new Cal(a,b);
+        int res =0;
+        res = cl.sum();
 
-    public String getName() {
-        return name;
-    }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getAdd() {
-        return add;
-    }
-
-    public String getPh() {
-        return ph;
-    }
-
-    public void setAdd(String add) {
-        this.add = add;
-    }
-
-    public void setPh(String ph) {
-        this.ph = ph;
     }
 }

@@ -558,7 +558,6 @@ import java.util.Scanner;
 //}
 
 
-
 // Date 4 May 2022
 // throw new IOException("Sorry, Device Error");
 //return_type_method_name() throws Exception{
@@ -643,7 +642,6 @@ import java.util.Scanner;
 //}
 
 
-
 //
 //
 //public class Basic {
@@ -671,7 +669,6 @@ import java.util.Scanner;
 //
 //
 //
-
 
 
 //
@@ -717,18 +714,46 @@ import java.util.Scanner;
 //
 
 
-
 public class Basic {
+
+    String name(String fName, String lName) {
+        return fName + " " + lName;
+    }
+
+    String conc(String s1, String s2){
+        return s1+s2;
+    }
+    int sum(int a , int b ){
+        return a+b;
+    }
+    void display(String name , int age){
+        System.out.println(name);
+        System.out.println(age);
+    }
+
     public static void main(String[] args) {
 
+        Basic basic = new Basic();
+//        String name = basic.name("K", "K");
+//        System.out.println(name);
+//        System.out.println( basic.conc("Demo", "Demo"));
+//        System.out.println(basic.sum(2,3));
+        Scanner scanner = new Scanner(System.in);
+        int a , b ;
+        System.out.println("Enter the value of a ");
+        a = scanner.nextInt();
+        System.out.println("Enter the value of b ");
+        b = scanner.nextInt();
+        int sum = basic.sum(a,b);
+        System.out.println(sum);
 
 
-        try{
-        }catch (ArithmeticException e){
-            System.out.println("Done");
-        }finally {
-            System.out.println("Finally");
-        }
+        basic.display("Demo",56);
+//        basic.display(56, "Demo");   // Error
+
+
+
+
 
     }
 }
