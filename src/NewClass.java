@@ -288,11 +288,11 @@
 //
 
 
-
 import Classes.Login;
 
 import java.util.Scanner;
 
+import static java.lang.Thread.sleep;
 
 
 //public class NewClass {
@@ -317,26 +317,225 @@ import java.util.Scanner;
 //}
 
 
+//
+//
+//public class NewClass {
+//    public static void main(String[] args) {
+//        Scanner scanner = new Scanner(System.in);
+//        String email , pass;
+//        boolean isLogin= false;
+//        System.out.println("Enter email id ");
+//        email = scanner.next();
+//        System.out.println("Enter your password");
+//        pass =scanner.next();
+//        System.out.println("************Processing**********");
+//        Login login = new Login(email, pass);
+//        isLogin = login.check();
+//        if(isLogin){
+//            System.out.println("Done");
+//        }else {
+//            System.out.println("Login Error");
+//        }
+//    }
+//}
+//
+
+
+//
+//
+//
+//
+//
+//public class NewClass {
+//
+//    NewClass(){
+//        this("Name");
+//
+//    }
+//    NewClass( String email){
+//        this("Kamlesh",56,89);
+//        System.out.println("Error");
+//        System.out.println(email);
+//    }
+//    NewClass(String email , int age , int ph ){
+//
+//    }
+//
+//
+//
+//    public static void main(String[] args) {
+////       NewClass newClass = new NewClass("kamlesh@yopmail.com",78,78);
+//    }
+//}
+//
+//
+// abstract  class Example12 {
+//    String email;
+//    void utils(){
+//        System.out.println("Enter");
+//    }
+//    abstract void display1(String name);
+//}
+//
+//
+//class Demo12 extends  Example12{
+//    String name;
+//    void display(int res){
+//        super.utils();
+//        System.out.println(res);
+//    }
+//
+//    @Override
+//    void utils() {
+//        super.utils();
+//    }
+//
+//    @Override
+//    void display1(String name) {
+//        System.out.println("Demo");
+//    }
+//}
+//
+//
+//public class NewClass  extends Demo12{
+//
+////    Demo12 demo12 = new Demo12();
+//
+//    void sum(int a, int b ){
+//        int res = a+b;
+//        super.display(res);
+//        super.utils();
+//        name = "Kamlesh";
+//        System.out.println(name);
+////        super.display(res);
+//    }
+//
+//    public static void main(String[] args) {
+//        NewClass newClass = new NewClass();
+////        newClass.display(8);
+//        newClass.utils();
+//
+//    }
+//}
+//
+//abstract  class Car{
+//    String name;
+//  abstract void property();
+//
+//
+//
+//}
+//
+//
+//
+//
+//public class NewClass implements Runnable{
+//    @Override
+//    public void run() {
+////        sleep();
+//    }
+//
+//    public static void main(String[] args) {
+//        NewClass newClass = new NewClass();
+//        Thread t1 = new Thread(newClass);
+//        t1.start();
+////        newClass.start();
+//    }
+//}
+
+//
+//interface Run {
+//    void onRunning();
+//}
+//
+//
+//class Car {
+//    String name;
+//    String modelNo;
+//
+//    void property(String modelNo, String name) {
+//        this.modelNo = modelNo;
+//        this.name = name;
+//    }
+//
+//    void display() {
+//        System.out.println(name);
+//        System.out.println(modelNo);
+//    }
+//}
+//
+//
+//public class NewClass extends Car implements Run {
+//
+//    @Override
+//    void property(String modelNo, String name) {
+//        super.property(modelNo, name);
+//    }
+//
+//    @Override
+//    public void onRunning() {
+//        System.out.println("Car is running");
+//    }
+//
+//    public static void main(String[] args) {
+//        NewClass newClass = new NewClass();
+//        newClass.property("123","Demo");
+//        newClass.display();
+//        newClass.onRunning();
+//    }
+//}
+//
+
+//
+//interface InkWell{
+//    String buttonType = "Submit";
+//    void onClick();
+//    void onDoubleClick();
+//    void onMove();
+//}
+//
+//
+//
+//interface ReqApi{
+//    void login(String email, String password);
+//}
+//
+//
+//public class NewClass implements InkWell ,ReqApi{
+//
+//    @Override
+//    public void onClick() {
+//
+//    }
+//
+//    @Override
+//    public void onDoubleClick() {
+//
+//    }
+//
+//    @Override
+//    public void onMove() {
+//
+//    }
+//
+//    public static void main(String[] args) {
+//
+//    }
+//
+//    @Override
+//    public void login(String email, String password) {
+//
+//    }
+//}
 
 
 
-public class NewClass {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String email , pass;
-        boolean isLogin= false;
-        System.out.println("Enter email id ");
-        email = scanner.next();
-        System.out.println("Enter your password");
-        pass =scanner.next();
-        System.out.println("************Processing**********");
-        Login login = new Login(email, pass);
-        isLogin = login.check();
-        if(isLogin){
-            System.out.println("Done");
-        }else {
-            System.out.println("Login Error");
-        }
-    }
-}
+
+
+
+
+
+
+
+
 

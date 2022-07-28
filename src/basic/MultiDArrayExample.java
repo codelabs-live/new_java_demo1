@@ -45,8 +45,8 @@ public class MultiDArrayExample {
             for (int j = 0; j < c.length; j++) {
                 for (int k = 0; k < c.length; k++) {
 
-//                    1 2       3 4
-//                    2 3       6 5
+//                    1 2       1 2
+//                    3 4       3 4
 
 //1*1+2*3 =
 //        1*4+2*5
