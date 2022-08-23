@@ -32,22 +32,23 @@ public class Registration {
         loginB.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                dbConnection.getConnection();
                 String email = emailTF.getText().trim();
                 String pass = passTF.getText().trim();
-                System.out.println(email);
-                System.out.println(pass);
-                dbConnection.getConnection();
+                String q = " INSERT into users VALUES('"+email+"','"+pass+"')";
+                Statement statement = null;
                 try {
-                    String qu = " INSERT into users VALUES (?, ?)";
-                    Statement statement = dbConnection.connection.createStatement();
+                    statement = dbConnection.connection.createStatement();
+                    int rs = statement.executeUpdate(q);
+                    System.out.println(rs);
+                    System.out.println("Done");
 
-                    statement.execute(qu);
 
-
-                } catch (SQLException v) {
-                    System.out.println(v);
-
+                } catch (SQLException ex) {
+                    ex.printStackTrace();
                 }
+
+
             }
         });
         panel.add(loginLabel);

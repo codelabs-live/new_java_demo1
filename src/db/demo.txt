@@ -1,0 +1,51 @@
+{
+    "location": {
+        "name": "Mandi Bahauddin",
+        "region": "Punjab",
+        "country": "Pakistan",
+        "lat": 32.58,
+        "lon": 73.5,
+        "tz_id": "Asia/Karachi",
+        "localtime_epoch": 1661160458,
+        "localtime": "2022-08-22 14:27"
+    },
+    "current": {
+        "last_updated_epoch": 1661159700,
+        "last_updated": "2022-08-22 14:15",
+        "temp_c": 37.9,
+        "temp_f": 100.2,
+        "is_day": 1,
+        "condition": {
+            "text": "Sunny",
+            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+            "code": 1000
+        },
+        "wind_mph": 2.2,
+        "wind_kph": 3.6,
+        "wind_degree": 202,
+        "wind_dir": "SSW",
+        "pressure_mb": 999.0,
+        "pressure_in": 29.5,
+        "precip_mm": 0.0,
+        "precip_in": 0.0,
+        "humidity": 37,
+        "cloud": 20,
+        "feelslike_c": 42.6,
+        "feelslike_f": 108.7,
+        "vis_km": 10.0,
+        "vis_miles": 6.0,
+        "uv": 9.0,
+        "gust_mph": 1.8,
+        "gust_kph": 2.9,
+        "air_quality": {
+            "co": 327.1000061035156,
+            "no2": 0.800000011920929,
+            "o3": 108.69999694824219,
+            "so2": 3.5,
+            "pm2_5": 14.699999809265137,
+            "pm10": 15.800000190734863,
+            "us-epa-index": 1,
+            "gb-defra-index": 2
+        }
+    }
+}

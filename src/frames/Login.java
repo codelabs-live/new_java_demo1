@@ -3,6 +3,7 @@ package frames;
 import db.DbConnection;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 
 public class Login {
@@ -10,6 +11,10 @@ public class Login {
 
     public static void main(String[] args) {
         DbConnection dbConnection = new DbConnection();
+        ImageIcon   imageIcon = new ImageIcon("assets/images/demo.png");
+//        Icon icon =  ("assets/images/demo.png");
+//        Label l = new Label();
+        JLabel l = new JLabel("Demo",imageIcon,JLabel.CENTER);
         JFrame frame = new JFrame("Login");
         JPanel panel = new JPanel();
         JLabel loginLabel = new JLabel("Login");

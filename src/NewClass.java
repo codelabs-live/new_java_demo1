@@ -529,7 +529,29 @@ import static java.lang.Thread.sleep;
 //}
 
 
+public class NewClass {
+    public static void main(String[] args) {
+String s = "234";
+int a = 0;
 
+
+String  name[] = new String[a];
+
+        try {
+            System.out.println(name[1]);
+
+
+        } catch (IndexOutOfBoundsException e) {
+            System.out.println("Chat now ");
+        }catch (Exception e){
+
+        } finally {
+            System.out.println("Done");
+        }
+
+
+    }
+}
 
 
 
